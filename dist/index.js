@@ -1,7 +1,12 @@
 "use strict";
-let age = 30;
-if (age < 50) {
-    age += 10;
+function kgToLbs(weight) {
+    if (typeof weight === "number") {
+        return weight * 2.2;
+    }
+    else {
+        return parseInt(weight) * 2.2;
+    }
 }
-console.log(age);
+kgToLbs(10);
+kgToLbs('10');
 //# sourceMappingURL=index.js.map
