@@ -32,13 +32,19 @@
 // }}
  
 // Union Types ... This technique is called Narrowing
-function kgToLbs(weight : string | number) : number {
-    if(typeof weight === "number") {
-        return weight * 2.2;
-    }
-     else {
-        return parseInt(weight) * 2.2;
-     }
-}
-console.log(kgToLbs(10));
-console.log(kgToLbs('10'));
+// function kgToLbs(weight : string | number) : number {
+//     if(typeof weight === "number") {
+//         return weight * 2.2;
+//     }
+//      else {
+//         return parseInt(weight) * 2.2;
+//      }
+// }
+// console.log(kgToLbs(10));
+// console.log(kgToLbs('10'));
+
+// Literal (exact, specific)
+
+// let quantity : number = 50;
+type Quantity = 50 | 100;
+let quantity : Quantity = 50;
